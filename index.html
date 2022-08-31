@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <h1 class="heading">SPLI<br />TTER</h1>
+    <section class="container">
+      <div class="calculation-container">
+        <div class="bill-input">
+          <p class="bill">Bill</p>
+          <input
+            type="number"
+            class="long-text-box"
+            id="bills-text-box"
+            value="0"
+          />
+        </div>
+        <div class="select-tip-box">
+          <p class="select-tip-text">Select Tip%</p>
+          <div class="tips">
+            <div class="tip">5</div>
+            <div class="tip">10</div>
+            <div class="tip">15</div>
+            <div class="tip">25</div>
+            <div class="tip">50</div>
+
+            <input class="custom-text" type="number" value="0000" />
+          </div>
+        </div>
+        <div class="population">
+          <div class="number-of-people-box">
+            <p class="number-of-people">Number of People</p>
+            <p class="not-zero hidden-class">Can't be Zero</p>
+          </div>
+          <input type="number" class="long-text-box no-of-people" value="0" />
+        </div>
+      </div>
+      <div class="results-container">
+        <div class="content">
+          <div class="results-boxes">
+            <div class="tip-amount-box">
+              <div class="amount-price">
+                <p class="result-text">Tip Amount</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="price-box">
+                <p class="price-text tip-amount">$0.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="results-boxes">
+            <div class="tip-amount-box">
+              <div class="amount-price">
+                <p class="result-text">Total</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="price-box">
+                <p class="price-text total-text">$0.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+  <script src="script.js"></script>
+</html>
